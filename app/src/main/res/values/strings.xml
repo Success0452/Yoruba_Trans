@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Yoruba Trans</string>
+    <string name="translate_yoruba_to_english">TRANSLATE YORUBA TO ENGLISH</string>
+    <string name="image">image</string>
 </resources>
