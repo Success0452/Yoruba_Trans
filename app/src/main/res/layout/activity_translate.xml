@@ -47,16 +47,16 @@
         app:layout_constraintStart_toStartOf="@+id/yorubaInput"
         app:layout_constraintTop_toBottomOf="@+id/yorubaInput" />
 
-    <EditText
+    <TextView
         android:id="@+id/meaningText"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="English"
+        android:textSize="40sp"
+        android:textColor="#880986"
+        android:textStyle="bold"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,4 +70,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/drawable" />
+
+    <Button
+        android:id="@+id/TranslateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Translate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meaningText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
