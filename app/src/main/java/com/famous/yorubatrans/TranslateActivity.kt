@@ -23,27 +23,27 @@ class TranslateActivity : AppCompatActivity() {
             var meaning = binding.meaningText.text
             when(yorubaTxt){
 
-                "Ekaro" -> meaning = "Good Morning"
-                "Ekaale" -> meaning = "Good Evening"
-                "Odaaro" -> meaning = "Good Night"
-                "Ekasan" -> meaning = "Good Aftnoon"
-                "Ounje" -> meaning = "Food"
-                "Ibi" -> meaning = "Place"
-                "Iji" -> meaning = "Storm"
-                "Eru" -> meaning = "Load"
-                "Aya" -> meaning = "Wife"
-                "Ara" -> meaning = "Body"
-                "Ekun" -> meaning = "Tears"
-                "Okan" -> meaning = "Heart"
-                "Bere" -> meaning = "Began"
-                "Oko" -> meaning = "Husband"
-                "Mun" -> meaning = "Drink it"
-                "Oja" -> meaning = "Market"
-                "Fun" -> meaning = "Give it"
-                "Ose" -> meaning = "Thank You"
-                "Ahon" -> meaning = "Tongue"
-                "Nkan" -> meaning = "Something"
-                "Rin" -> meaning = "Walk"
+                "Ekaro" -> binding.meaningText.text = "Good Morning"
+                "Ekaale" -> binding.meaningText.text = "Good Evening"
+                "Odaaro" -> binding.meaningText.text = "Good Night"
+                "Ekasan" -> binding.meaningText.text = "Good Aftnoon"
+                "Ounje" -> binding.meaningText.text = "Food"
+                "Ibi" -> binding.meaningText.text = "Place"
+                "Iji" -> binding.meaningText.text = "Storm"
+                "Eru" -> binding.meaningText.text = "Load"
+                "Aya" -> binding.meaningText.text = "Wife"
+                "Ara" -> binding.meaningText.text = "Body"
+                "Ekun" -> binding.meaningText.text = "Tears"
+                "Okan" -> binding.meaningText.text = "Heart"
+                "Bere" -> binding.meaningText.text = "Began"
+                "Oko" -> binding.meaningText.text = "Husband"
+                "Mun" -> binding.meaningText.text = "Drink it"
+                "Oja" -> binding.meaningText.text = "Market"
+                "Fun" -> binding.meaningText.text = "Give it"
+                "Ose" -> binding.meaningText.text = "Thank You"
+                "Ahon" -> binding.meaningText.text = "Tongue"
+                "Nkan" -> binding.meaningText.text = "Something"
+                "Rin" -> binding.meaningText.text = "Walk"
 
                 else -> checkGoogle()
             }
@@ -51,7 +51,7 @@ class TranslateActivity : AppCompatActivity() {
     }
 
     private fun checkGoogle() {
-        val queryUrl: Uri = Uri.parse("${"https://www.google.com/search?q="}${yorubaTxt}")
+        val queryUrl: Uri = Uri.parse("${"https://www.google.com/search?q="}${yorubaTxt} in Yoruba to English")
         val intent = Intent(Intent.ACTION_VIEW, queryUrl)
         startActivity(intent)
     }
