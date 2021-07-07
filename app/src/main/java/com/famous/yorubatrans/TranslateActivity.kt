@@ -47,6 +47,32 @@ class TranslateActivity : AppCompatActivity() {
 
                 else -> checkGoogle()
             }
+            when(yorubaTxt){
+
+                "Ekaro" -> binding.meaningText.text = "Good Morning"
+                "Ekaale" -> binding.meaningText.text = "Good Evening"
+                "Odaaro" -> binding.meaningText.text = "Good Night"
+                "Ekasan" -> binding.meaningText.text = "Good Aftnoon"
+                "Ounje" -> binding.meaningText.text = "Food"
+                "Ibi" -> binding.meaningText.text = "Place"
+                "Iji" -> binding.meaningText.text = "Storm"
+                "Eru" -> binding.meaningText.text = "Load"
+                "Aya" -> binding.meaningText.text = "Wife"
+                "Ara" -> binding.meaningText.text = "Body"
+                "Ekun" -> binding.meaningText.text = "Tears"
+                "Okan" -> binding.meaningText.text = "Heart"
+                "Bere" -> binding.meaningText.text = "Began"
+                "Oko" -> binding.meaningText.text = "Husband"
+                "Mun" -> binding.meaningText.text = "Drink it"
+                "Oja" -> binding.meaningText.text = "Market"
+                "Fun" -> binding.meaningText.text = "Give it"
+                "Ose" -> binding.meaningText.text = "Thank You"
+                "Ahon" -> binding.meaningText.text = "Tongue"
+                "Nkan" -> binding.meaningText.text = "Something"
+                "Rin" -> binding.meaningText.text = "Walk"
+
+                else -> checkGoogle()
+            }
         }
     }
 
